@@ -80,8 +80,44 @@ export class HomePage extends React.Component {
       <article>
         <div>
           <section className={`${styles.textSection} ${styles.centered}`}>
-            <H2>Start your next Lytbulb react project in seconds</H2>
-            <p>A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices</p>
+          <div class="ui grid entire-app">
+            <div class="ui three column row top-header">
+              <a href="workflow.html" style="overflow: hidden">
+                <div class="left floated column logo"><img src="assets/logo-ffb21044bd40f1e391426ff861087fa5.png" class="lytbulb-logo"></div>
+              </a>
+              <div class="right floated column top-header-right">
+              </div>
+            </div>
+            <div class="ui grid app-body">
+              <div class="ui segments landing-segments">
+                <div class="ui segment landing-h1">
+                <h1 class="landing-h1-text">AUTOMATE YOUR WORK.</h1>
+                </div>
+                <div class="ui segment landing-h2">
+                  <h2 class="landing-h2-text">Lytbulb standardizes your engineering and management processes.</br>Use it across all of your projects and teams.</h2>
+                </div>
+                <div class="ui segment landing-choose">
+                    <div class="field choose-setup">
+                      <select class="ui search dropdown">
+                        <option value="">Select Project Type</option>
+                        <option value="CS">Concept Study</option>
+                        <option value="PF">Pre-FEED</option>
+                        <option value="FE">FEED</option>
+                        <option value="DD">Detailed Design</option>
+                      </select>
+                      <a href="workflow.html?start-tour">
+                      <button class="ui primary button add-workflow-button" style="width: 70px; height: 36.2px; border-left: 0px;">
+                        Try it
+                      </button>
+                      </a>
+
+                    </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
           </section>
           <section className={styles.textSection}>
             <H2>Try me!</H2>
